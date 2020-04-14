@@ -5,20 +5,5 @@ import sys
 
 """
 Function: prints all files starting with the string passed as sys.arg[1], and prints a newline
-Original: 
-
-import os
-import sys
-def main(filetype):
-    files = [f for f in os.listdir(os.getcwd()) if os.path.isfile(os.path.join(os.getcwd(), f))]
-    for i in files:
-        if i.lower().startswith(filetype.lower()):
-            with open(i, 'r') as f:
-                print(f.read())
-                print("\n")
-if __name__ == "__main__":
-    try:
-        main(sys.argv[1])
-    except IndexError:
-        print(f"Usage: {sys.argv[0]} <link type>")
+Original: https://github.com/Mili-NT/BinBot/blob/master/utils/showLinks
 """
